@@ -19,7 +19,7 @@ Remove the null values from the data
 Save the Clean data to the file
 
 # CODE
-
+```
 import pandas as pd
 df=pd.read_csv("Data_set.csv")
 df.head(10)
@@ -33,5 +33,5 @@ df['aired_on']=df['aired_on'].fillna(df['aired_on'].mode()[0])
 df['original_network']=df['original_network'].fillna(df['original_network'].mode()[0])
 df['current_overall_rank']=df['current_overall_rank'].fillna(df['current_overall_rank'].median())
 df.info()
-
+```
 # OUPUT
